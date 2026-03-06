@@ -13,6 +13,9 @@ app.get('/twitter',(req,res)=>{
     res.send('whatsup')
 })
 
+app.get('/youtube',(req,res)=>{
+    res.json({user:'tobi'})
+})
 app.listen(process.env.PORT,()=>{
     console.log(`example app listening on port ${port}`)
 })
